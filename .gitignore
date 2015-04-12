@@ -1,0 +1,5 @@
+conll-*/
+*~
+*.pyc
+*.log
+*.out

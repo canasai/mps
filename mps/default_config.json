@@ -1,0 +1,92 @@
+{
+    "general": {
+        "output": "result.out", 
+        "data_dir": "conll-2012/trial/data/english", 
+        "suffix": ".conll"
+    },
+    "params": {
+        "keep_subpatterns": true, 
+        "skip_indefinite_pronoun": true, 
+        "remove_conll_spurious_mentions": true, 
+        "max_sent_dist": -1, 
+        "skip_indefinite_article": true, 
+        "skip_bare_plurals": true, 
+        "skip_disagreed_parse_ne": false
+    }, 
+    "tracking": {
+        "missing_gold_mentions": false, 
+        "mention_detection_by_types": false, 
+        "cluster_errors": true, 
+        "coref_pairwise_by_types": true
+    }, 
+    "evaluation": {
+        "coref_muc": true, 
+        "mention_detection": true, 
+        "coref_pairwise": true, 
+        "coref_bcubed": true
+    }, 
+    "passes": {
+        "0": {
+            "rules": [
+                "exact_match"
+            ]
+        }, 
+        "1": {
+            "rules": [
+                "relaxed_exact_match"
+            ]
+        }, 
+        "2": {
+            "rules": [
+                "iwithini", 
+                "cluster_head_match", 
+                "word_inclusion", 
+                "compatible_modifiers"
+            ]
+        }, 
+        "3": {
+            "rules": [
+                "iwithini", 
+                "cluster_head_match", 
+                "word_inclusion"
+            ]
+        }, 
+        "4": {
+            "rules": [
+                "iwithini", 
+                "cluster_head_match", 
+                "compatible_modifiers"
+            ]
+        }, 
+        "5": {
+            "rules": [
+                "iwithini", 
+                "relaxed_head_match", 
+                "word_inclusion", 
+                "compatible_properties"
+            ]
+        }, 
+        "6": {
+            "rules": [
+                "iwithini", 
+                "pronoun_match", 
+                "compatible_properties"
+            ]
+        }
+    }, 
+    "dict_files": {
+        "animate": "dict/animate.unigrams.txt",
+        "inanimate": "dict/inanimate.unigrams.txt",
+        "male": "dict/male.unigrams.txt",
+        "female": "dict/female.unigrams.txt",
+        "neutral": "dict/neutral.unigrams.txt",
+        "singular": "dict/singular.unigrams.txt",
+        "plural": "dict/plural.unigrams.txt",
+        "country": "dict/country.abbreviations.txt",
+        "state": "dict/state.abbreviations.txt"
+    }, 
+    "post_processing": {
+        "remove_singletons": true,
+        "remove_nested_mentions": false
+    }
+}
