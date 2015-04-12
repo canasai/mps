@@ -302,7 +302,7 @@ You can specify the input data folder and parameters by editing the `mps/default
 
 * A Multi-Pass Sieve for Coreference Resolution.
  Karthik Raghunathan, Heeyoung Lee, Sudarshan Rangarajan, Nathanael Chambers, Mihai Surdeanu, Dan Jurafsky, Christopher Manning.
-  EMNLP-2010. 
+  EMNLP 2010. 
 
 * Stanford's Multi-Pass Sieve Coreference Resolution System at the CoNLL-2011 Shared Task.
   Heeyoung Lee, Yves Peirsman, Angel Chang, Nathanael Chambers, Mihai Surdeanu, Dan Jurafsky.
