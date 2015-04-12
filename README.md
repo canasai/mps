@@ -4,6 +4,7 @@
 This is an implementation of  a multi-pass sieve for coreference resolution (Raghunathan et al., 2010) in Python.
 I extend the [Berkeley Coreference Analyser](http://code.google.com/p/berkeley-coreference-analyser) that is originally written to perform error analysis on coreference resolution output (Kummerfeld and Klein, 2013).
 The mps program conducts end-to-end coreference resolution.
+The code is implemented and tested on Python 2.7.5 and does not work properly on Python 3.
 
 #### Quick start
 Clone the code to your machine:
